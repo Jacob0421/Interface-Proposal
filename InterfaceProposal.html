@@ -1,297 +1,506 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Employment Application</title>
     <script src="index.js"></script>
+    <style>
+        body {
+            padding-left: 10%;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #Work_Experience tr {
+            display: block;
+            margin-bottom: 5px;
+            margin-left: -50px;
+        }
+
+        #Work_Experience td {
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+
+        #Work_Experience th {
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1 style= "text-align: left";>Personal Details</h1>
+    <form>
+        <h1 style="text-align: left" ;>Personal Details</h1>
 
-<p>First Name:</p>
-<input type="text" id="fname" name="fname"><br><br>
+        <p>First Name:</p>
+        <input type="text" id="fname" name="fname"><br><br>
 
-<p>Last Name:</p>
-<input type="text" id="lname" name="lname"><br><br>
+        <p>Last Name:</p>
+        <input type="text" id="lname" name="lname"><br><br>
 
-<p>Telephone Number:</p>
-<input type="text" id="phone" name="phone"><br><br>
+        <p>Telephone Number:</p>
+        <input type="text" id="phone" name="phone"><br><br>
 
-<p>Mobile Phone Number:</p>
-<input type="text" id="mphone" name="mphone"><br><br>
+        <p>Mobile Phone Number:</p>
+        <input type="text" id="mphone" name="mphone"><br><br>
 
-<p>Email Address:</p>
-<input type="text" id="mphone" name="mphone"><br><br>
+        <p>Email Address:</p>
+        <input type="text" id="mphone" name="mphone"><br><br>
 
 
-<h1 style= "text-align: left";>Current Address</h1>
+        <h1 style="text-align: left" ;>Current Address</h1>
 
-<p>Street Address:</p>
-<input type="text" id="address" name="address"><br><br>
+        <p>Street Address:</p>
+        <input type="text" id="address" name="address"><br><br>
 
-<p>City:</p>
-<input type="text" id="city" name="city"><br><br>
+        <p>City:</p>
+        <input type="text" id="city" name="city"><br><br>
 
-<p>State:</p>
-<input type="text" id="state" name="state"><br><br>
+        <p>State:</p>
+        <input type="text" id="state" name="state"><br><br>
 
-<p>Zip Code:</p>
-<input type="text" id="zip" name="zip"><br><br>
+        <p>Zip Code:</p>
+        <input type="text" id="zip" name="zip"><br><br>
 
 
-<h1 style= "text-align: left";>Vehicle Information</h1>
+        <h1 style="text-align: left" ;>Vehicle Information</h1>
 
-<p>Do you have a Driver's License?</p>
-<div>
-  <input type="radio" id="Yes" name="driver's license" value="yes">
-  <label for="yes">Yes</label>
-</div>
+        <p>Do you have a Driver's License?</p>
+        <div>
+            <input type="radio" id="Yes" name="driver's license" value="yes">
+            <label for="yes">Yes</label>
+        </div>
 
-<div>
-  <input type="radio" id="No" name="driver's license" value="no">
-  <label for="no">No</label>
-</div>
+        <div>
+            <input type="radio" id="No" name="driver's license" value="no">
+            <label for="no">No</label>
+        </div>
 
 
-<p>State of Issue:</p>
-<input type="text" id="issue" name="issue"><br><br>
+        <p>State of Issue:</p>
+        <input type="text" id="issue" name="issue"><br><br>
 
 
-<p>Expiration Date:</p>
-<input type="text" id="edate" name="edate"><br><br>
+        <p>Expiration Date:</p>
+        <input type="text" id="edate" name="edate"><br><br>
 
 
-<p>Do you currently own a vehicle?</p>
-<div>
-  <input type="radio" id="Yes" name="vehicle" value="yes">
-  <label for="yes">Yes</label>
-</div>
+        <p>Do you currently own a vehicle?</p>
+        <div>
+            <input type="radio" id="Yes" name="vehicle" value="yes">
+            <label for="yes">Yes</label>
+        </div>
 
-<div>
-  <input type="radio" id="No" name="vehicle" value="no">
-  <label for="no">No</label>
-</div>
+        <div>
+            <input type="radio" id="No" name="vehicle" value="no">
+            <label for="no">No</label>
+        </div>
 
 
-<p>Are you willing to drive your personal vehicle as part of your duties?</p>
-<div>
-  <input type="radio" id="Yes" name="duties" value="yes">      
-  <label for="yes">Yes</label>
-</div>
+        <p>Are you willing to drive your personal vehicle as part of your duties?</p>
+        <div>
+            <input type="radio" id="Yes" name="duties" value="yes">
+            <label for="yes">Yes</label>
+        </div>
 
-<div>
-  <input type="radio" id="No" name="duties" value="no">
-  <label for="no">No</label>
-</div>
+        <div>
+            <input type="radio" id="No" name="duties" value="no">
+            <label for="no">No</label>
+        </div>
 
-<p>Make:</p>
-<input type="text" id="make" name="make"><br><br>
+        <p>Make:</p>
+        <input type="text" id="make" name="make"><br><br>
 
-<p>Model:</p>
-<input type="text" id="model" name="model"><br><br>
+        <p>Model:</p>
+        <input type="text" id="model" name="model"><br><br>
 
-<p>Year:</p>
-<input type="text" id="year" name="year"><br><br>
+        <p>Year:</p>
+        <input type="text" id="year" name="year"><br><br>
 
 
 
-<h1 style= "text-align: left";>Employment Information</h1>
+        <h1 style="text-align: left" ;>Employment Information</h1>
 
-<p>Employment Desired:</p>
-<input type="text" id="employment" name="employment"><br><br>
+        <p>Employment Desired:</p>
+        <input type="text" id="employment" name="employment"><br><br>
 
-<p>Position Applied For:</p>
-<input type="text" id="position" name="position"><br><br>
+        <p>Position Applied For:</p>
+        <input type="text" id="position" name="position"><br><br>
 
-<p>Desired Salary:</p>
-<input type="text" id="salary" name="salary"><br><br>
+        <p>Desired Salary:</p>
+        <input type="text" id="salary" name="salary"><br><br>
 
-<p>Available Start Date:</p>
-<input type="text" id="start date" name="start date"><br><br>
-
-<p>Are you able to work nights?</p>
-<div>
-  <input type="radio" id="Yes" name="nights" value="yes">      
-  <label for="yes">Yes</label>
-</div>
-
-<div>
-  <input type="radio" id="No" name="nights" value="no">
-  <label for="no">No</label>
-</div>
-
-<p>How many hours weekly can you work?</p>
-<select name="hours weekly" id="hours weekly">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>
-</select>
-
-<p>What days/hours can you work?</p>
-<p>Days:</p>
-<div>
-  <input type="checkbox" id="monday" name="monday">
-  <label for="monday">Monday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="tuesday" name="tuesday">
-  <label for="tuesday">Tuesday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="wednesday" name="wednesday">
-  <label for="wednesday">Wednesday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="thursday" name="thursday">
-  <label for="thursday">Thursday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="friday" name="friday">
-  <label for="friday">Friday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="saturday" name="saturday">
-  <label for="saturday">Saturday</label>
-</div>
-
-<div>
-  <input type="checkbox" id="sunday" name="sunday">
-  <label for="sunday">Sunday</label>
-</div>
-
-<p>Hours</p>
-<div>
-  <input type="checkbox" id="12am" name="12am">
-  <label for="12am">12 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="1am" name="1am">
-  <label for="1am">1 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="2am" name="2am">
-  <label for="2am">2 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="3am" name="3am">
-  <label for="3am">3 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="4am" name="4am">
-  <label for="4am">4 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="5am" name="5am">
-  <label for="5am">5 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="6am" name="6am">
-  <label for="6am">6 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="7am" name="7am">
-  <label for="7am">7 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="8am" name="8am">
-  <label for="8am">8 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="9am" name="9am">
-  <label for="9am">9 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="10am" name="10am">
-  <label for="10am">10 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="11am" name="11am">
-  <label for="11am">11 a.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="12pm" name="12pm">
-  <label for="12pm">12 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="1pm" name="1pm">
-  <label for="1pm">1 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="2pm" name="2pm">
-  <label for="2pm">2 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="3pm" name="3pm">
-  <label for="3pm">3 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="4pm" name="4pm">
-  <label for="4pm">4 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="5pm" name="5pm">
-  <label for="5pm">5 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="6pm" name="6pm">
-  <label for="6pm">6 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="7pm" name="7pm">
-  <label for="7pm">7 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="8pm" name="8pm">
-  <label for="8pm">8 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="9pm" name="9pm">
-  <label for="9pm">9 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="10pm" name="10pm">
-  <label for="10pm">10 p.m.</label>
-</div>
-
-<div>
-  <input type="checkbox" id="11pm" name="11pm">
-  <label for="11pm">11 p.m.</label>
-</div>
+        <p>Available Start Date:</p>
+        <input type="text" id="start date" name="start date"><br><br>
+
+        <p>Are you able to work nights?</p>
+        <div>
+            <input type="radio" id="Yes" name="nights" value="yes">
+            <label for="yes">Yes</label>
+        </div>
+
+        <div>
+            <input type="radio" id="No" name="nights" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <p>How many hours weekly can you work?</p>
+        <select name="hours weekly" id="hours weekly">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <p>What days/hours can you work?</p>
+        <p>Days:</p>
+        <div>
+            <input type="checkbox" id="monday" name="monday">
+            <label for="monday">Monday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="tuesday" name="tuesday">
+            <label for="tuesday">Tuesday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="wednesday" name="wednesday">
+            <label for="wednesday">Wednesday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="thursday" name="thursday">
+            <label for="thursday">Thursday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="friday" name="friday">
+            <label for="friday">Friday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="saturday" name="saturday">
+            <label for="saturday">Saturday</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="sunday" name="sunday">
+            <label for="sunday">Sunday</label>
+        </div>
+
+        <p>Hours</p>
+        <div>
+            <input type="checkbox" id="12am" name="12am">
+            <label for="12am">12 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="1am" name="1am">
+            <label for="1am">1 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="2am" name="2am">
+            <label for="2am">2 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="3am" name="3am">
+            <label for="3am">3 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="4am" name="4am">
+            <label for="4am">4 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="5am" name="5am">
+            <label for="5am">5 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="6am" name="6am">
+            <label for="6am">6 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="7am" name="7am">
+            <label for="7am">7 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="8am" name="8am">
+            <label for="8am">8 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="9am" name="9am">
+            <label for="9am">9 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="10am" name="10am">
+            <label for="10am">10 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="11am" name="11am">
+            <label for="11am">11 a.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="12pm" name="12pm">
+            <label for="12pm">12 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="1pm" name="1pm">
+            <label for="1pm">1 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="2pm" name="2pm">
+            <label for="2pm">2 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="3pm" name="3pm">
+            <label for="3pm">3 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="4pm" name="4pm">
+            <label for="4pm">4 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="5pm" name="5pm">
+            <label for="5pm">5 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="6pm" name="6pm">
+            <label for="6pm">6 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="7pm" name="7pm">
+            <label for="7pm">7 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="8pm" name="8pm">
+            <label for="8pm">8 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="9pm" name="9pm">
+            <label for="9pm">9 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="10pm" name="10pm">
+            <label for="10pm">10 p.m.</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="11pm" name="11pm">
+            <label for="11pm">11 p.m.</label>
+        </div>
+
+
+        <div id="Work_Experience">
+            <section>
+                <table id="Experience_Table" cols="4">
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="text-centered">
+                                <h1>Previous Work Experience:</h1>
+                            </th>
+                            <th id="RemoveButton">
+                                <input type="button" id="Remove_Experience" class="btn btn-danger" value="Remove"/>
+                                <script type="text/javascript">
+                                    $('#Remove_Experience').on('click', function () {
+                                        $(this).parent().parent().parent().parent().remove();
+                                    });
+                                </script>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="CompanyName">
+                                    Company Name:
+                                    <input type="text" placeholder="ABC & Co" id="CompanyName" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="CompanyAddress">
+                                    Street Address:
+                                    <input type="text" placeholder="123 Alphabet Ave" id="CompanyAddress" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="CompanyCity">
+                                    City:
+                                    <input type="text" placeholder="Company City" id="CompanyCity" />
+                                </label>
+                                <br />
+                            </td>
+                            <td>
+                                <label for="CompanyState">
+                                    State:
+                                    <select id="CompanyState">
+                                        <option disabled selected default>--State--</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AR">AR</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="CA">CA</option>
+                                        <option value="CO">CO</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DC">DC</option>
+                                        <option value="DE">DE</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="HI">HI</option>
+                                        <option value="IA">IA</option>
+                                        <option value="ID">ID</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="LA">LA</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MD">MD</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MO">MO</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MT">MT</option>
+                                        <option value="NC">NC</option>
+                                        <option value="NE">NE</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="NM">NM</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NY">NY</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="OK">OK</option>
+                                        <option value="OR">OR</option>
+                                        <option value="PA">PA</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SD">SD</option>
+                                        <option value="TN">TN</option>
+                                        <option value="TX">TX</option>
+                                        <option value="UT">UT</option>
+                                        <option value="VT">VT</option>
+                                        <option value="VA">VA</option>
+                                        <option value="WA">WA</option>
+                                        <option value="WI">WI</option>
+                                        <option value="WV">WV</option>
+                                        <option value="WY">WY</option>
+                                    </select>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="CompanyZip">
+                                    Zip Code:
+                                    <input type="number" placeholder="12345" id="CompanyZip" maxlength="5" style="width: 60px;" />
+                                </label>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="CompanyPhone">
+                                    Company Phone:
+                                    <input type="text" placeholder="(123)456-7890" id="CompanyPhone" maxlength="13" style="width: 120px;" />
+                                </label>
+                            </td>
+                            <td colspan="2">
+                                <label for="CompanyEmail">
+                                    Company Email:
+                                    <input type="email" placeholder="example@MyCompany.com" id="CompanyEmail" style="width: 220px;" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="JobTitle">
+                                    Position Title:
+                                    <input type="text" placeholder="Position Name" id="JobTitle" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="StartDate">
+                                    Start Date:
+                                    <input type="date" placeholder="Start Date" id="StartDate" min="1950-01-01" max="2020-11-1"/>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="EndDate">
+                                    End Date:
+                                    <input type="date" placeholder="End Date" id="EndDate" max="2020-11-22" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Skills">
+                                    List duties Performed and skills used: <br />
+                                    <textarea type="textarea" placeholder="List Relevant skills here." id="Skills" style="width: 200%;" rows="5"></textarea>
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <input type="button" id="Add_Experience" value="Add Experience" class="btn btn-primary" /><br />
+        <script type="text/javascript">
+            $('#Add_Experience').on('click', function () {
+                var $elem = $("#Experience_Table").clone().find("input,textbox").val("").end()
+                .find("input,textarea").val("").end()
+                .find("input,tel").val("").end()
+                .find("input,date").val("").end()
+                .find("input,number").val("").end()
+                .find("input,email").val("").end()
+                .find("select").val("--State--").end()
+                $elem.appendTo("#Work_Experience")
+            });
+        </script>
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </form>
 </body>
 </html>
