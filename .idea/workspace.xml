@@ -67,7 +67,7 @@
       <workItem from="1606013378784" duration="596000" />
       <workItem from="1606094550531" duration="4557000" />
       <workItem from="1606100385193" duration="118000" />
-      <workItem from="1606104353820" duration="346000" />
+      <workItem from="1606104353820" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="Added education fields and modularity to education and experience">
       <created>1606096962361</created>
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606099123928</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added end user agreement and digital signature">
+      <created>1606104815983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606104815983</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +111,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added education fields and modularity to education and experience" />
     <MESSAGE value="Added line breaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added line breaks" />
+    <MESSAGE value="Added end user agreement and digital signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added end user agreement and digital signature" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605996584986">
@@ -119,9 +127,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="437" y="190" key="MultipleFileMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1606097327525" />
-    <state x="391" y="147" key="Vcs.Push.Dialog.v2" timestamp="1606099125806">
+    <state x="391" y="147" key="Vcs.Push.Dialog.v2" timestamp="1606104820288">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="391" y="147" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606099125806" />
+    <state x="391" y="147" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606104820288" />
   </component>
 </project>
