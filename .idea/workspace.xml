@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b34dac04-4110-49cc-b9a0-56e16acb7ba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Interface-Proposal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interface-Proposal.iml" afterDir="false" />
+    <list default="true" id="b34dac04-4110-49cc-b9a0-56e16acb7ba3" name="Default Changelist" comment="Added education fields and modularity to education and experience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceProposal.html" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceProposal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +66,16 @@
       <workItem from="1605982158666" duration="3936000" />
       <workItem from="1605989452289" duration="7388000" />
       <workItem from="1606013378784" duration="596000" />
-      <workItem from="1606094550531" duration="2278000" />
+      <workItem from="1606094550531" duration="4350000" />
     </task>
+    <task id="LOCAL-00001" summary="Added education fields and modularity to education and experience">
+      <created>1606096962361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606096962361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,10 +93,26 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added education fields and modularity to education and experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added education fields and modularity to education and experience" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605996584986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605996584986" />
+    <state x="0" y="0" width="1600" height="860" key="MergeDialog" timestamp="1606097327519">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="0" y="0" width="1600" height="860" key="MergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1606097327519" />
+    <state x="437" y="190" key="MultipleFileMergeDialog" timestamp="1606097327525">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="437" y="190" key="MultipleFileMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1606097327525" />
+    <state x="391" y="147" key="Vcs.Push.Dialog.v2" timestamp="1606097341107">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="391" y="147" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606097341107" />
   </component>
 </project>
