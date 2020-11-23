@@ -1,0 +1,25 @@
+body {
+    padding-left: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Work_Experience tr {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: -50px;
+}
+
+#Work_Experience td {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#Work_Experience th {
+    padding-left: 50px;
+    padding-top: 20px;
+}

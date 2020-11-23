@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b34dac04-4110-49cc-b9a0-56e16acb7ba3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Interface-Proposal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interface-Proposal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceProposal.html" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceProposal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CIS4930-Project1 copy" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -59,6 +64,11 @@
       <option name="presentableId" value="Default" />
       <updated>1604966313880</updated>
       <workItem from="1604966314950" duration="220000" />
+      <workItem from="1604966558431" duration="989000" />
+      <workItem from="1605982158666" duration="3936000" />
+      <workItem from="1605989452289" duration="7388000" />
+      <workItem from="1606013378784" duration="596000" />
+      <workItem from="1606094550531" duration="2278000" />
     </task>
     <servers />
   </component>
@@ -75,5 +85,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605996584986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605996584986" />
   </component>
 </project>
